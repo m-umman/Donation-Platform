@@ -1,0 +1,193 @@
+:root{
+    --primary : #FC8500 ; 
+}
+.text-primary{
+    color: #FC8500 !important;
+}
+
+/* navbar start */
+
+/* menu responsiveness */
+.navbar{
+    background-color: #023047;
+    
+}
+.title span{
+    color: var(--primary);
+}
+.menu a {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-weight: 500;
+
+}
+.btn-border {
+    border: 1px solid #FC8500;
+    transition: 0.5s ease-in-out;
+}
+.btn-border:hover{
+    color: #FFFFFF !important;
+    background-color: #FC8500;
+    
+}
+
+@media (max-width: 768px){
+    .nav_resp_title  {
+        display: inline;
+        width: 70%;
+        margin-top: 2px;
+    }
+    .menu_icon{
+        display: inline;
+        width: 20%;
+        
+    }
+    .menu_icon i {
+        font-size: 2rem;
+        
+    }
+
+    .menu_resp{
+        background-color: #023047;
+        width: 100%;
+        position: absolute;
+        z-index: 1;
+        height: 100vh;
+        top: 80px;
+        transform: translateX(-100%);
+        transition: 0.5s ease-in;
+        
+
+
+    }
+    .menu_resp_show{
+        transform: translateX(0%);
+        transition: 2s ease-out;
+    }
+    .menu_resp a {
+        text-decoration: none;
+        color: #FFFFFF;
+        font-weight: 500;
+        width: 100%;
+        border-bottom: 1px solid white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 5px 5px 20px 5px;
+    }
+    
+}
+
+/* universal classes  */
+
+.hide{
+    display: none !important;
+}
+.show{
+    display: inline !important;
+}
+
+
+
+/* navbar end */
+
+
+
+input , label {
+    cursor: pointer;
+}
+
+input {
+    outline: none;
+    border: none;
+}
+input[type="radio"]{
+    
+    height: 15px;
+    width: 15px;
+  transition: 0.3s ease-in-out;
+
+    
+}
+input[type="radio"]:checked{
+    accent-color: #FC8500;
+    transform: scale(1.2);
+    
+}
+label , p {
+    
+    font-weight: 700;
+    color: #727272;
+    line-height: 18px;
+}
+::placeholder{
+  font-family: "__Libre_Baskerville_86181b", "__Libre_Baskerville_Fallback_86181b";
+  color: #ddd;
+}
+form h4{
+    font-family: "__Libre_Baskerville_86181b", "__Libre_Baskerville_Fallback_86181b";
+}
+
+.amount_input{
+    /* display: none; */
+    visibility: hidden;
+}
+.amount_label {
+    background-color:  #727272;
+    width: 80px;
+    height: 50px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    transition: 0.3s ease-in-out;
+
+
+}
+input[type="radio"].amount_input:checked + label.amount_label {
+    background-color: #FC8500;
+    transform: scale(1.2);
+  }
+  
+.donate_button {
+    transition: 0.5s ease-in-out;
+
+}  
+.donate_button:hover{
+    background-color: white !important;
+    box-shadow: 10px 10px 20px #FC8500;
+    color: #FC8500 !important;
+
+
+}  
+
+
+.images {
+    object-fit: cover;
+}
+
+/* media query for debit card details div  */
+@media (max-width:426px) {
+    .debit_card{
+        min-height: 450px;
+    }
+  
+}
+
+
+
+
+
+/* footer */
+
+
+footer{
+    background-color: #023047;
+    min-height: 400px;
+}
+.copywrite{
+    min-height: 50px;
+}
+
+/* footer */

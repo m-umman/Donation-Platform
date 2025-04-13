@@ -1,0 +1,237 @@
+:root{
+    --primary : #FC8500 ; 
+}
+.text-primary{
+    color: #FC8500 !important;
+}
+
+/* navbar start */
+
+/* menu responsiveness */
+.navbar{
+    background-color: #023047;
+    
+}
+.title span{
+    color: var(--primary);
+}
+.menu a {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-weight: 500;
+
+}
+.btn-border {
+    border: 1px solid #FC8500;
+    transition: 0.5s ease-in-out;
+}
+.btn-border:hover{
+    color: #FFFFFF !important;
+    background-color: #FC8500;
+    
+}
+
+@media (max-width: 768px){
+    .nav_resp_title  {
+        display: inline;
+        width: 70%;
+        margin-top: 2px;
+    }
+    .menu_icon{
+        display: inline;
+        width: 20%;
+        
+    }
+    .menu_icon i {
+        font-size: 2rem;
+        
+    }
+
+    .menu_resp{
+        background-color: #023047;
+        width: 100%;
+        position: absolute;
+        z-index: 1;
+        height: 100vh;
+        top: 80px;
+        transform: translateX(-100%);
+        transition: 0.5s ease-in;
+        
+
+
+    }
+    .menu_resp_show{
+        transform: translateX(0%);
+        transition: 2s ease-out;
+    }
+    .menu_resp a {
+        text-decoration: none;
+        color: #FFFFFF;
+        font-weight: 500;
+        width: 100%;
+        border-bottom: 1px solid white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 5px 5px 20px 5px;
+    }
+    
+}
+
+/* universal classes  */
+
+.hide{
+    display: none !important;
+}
+.show{
+    display: inline !important;
+}
+
+
+
+/* navbar end */
+
+/* 
+second section  */
+
+.pic1{
+    background: url(img/cont_1.jpg);
+    background-position: right;
+    background-size: cover;
+    
+    height:52vh;
+    width: 52vh;
+    border-radius: 15px;
+    z-index: 1;
+    position: absolute;
+    box-shadow: 10px 10px 10px 10px rgb(143, 137, 137);
+}
+.pic2{
+    background: url(img/con-2.jpg);
+    background-position: right;
+    background-size: cover;
+    height:52vh;
+    width: 52vh;
+    /* position: absolute; */
+    box-shadow: 10px 10px 10px 10px rgb(143, 137, 137);
+  
+    margin-left: 250px;
+    margin-top:250px;
+    border-radius: 15px;
+    z-index: -1;
+}
+.pic3{
+    height: 100px;
+    width: 280px;
+    background-color:rgb(194, 56, 37);
+    border-radius: 15px;
+    margin-left: 50px;
+    margin-top:-150px;
+
+}
+
+
+ .paragraph{
+    font-size: 2rem;
+    color:rgb(194, 56, 37);
+
+}
+.paragraph-2{
+    font-size: 4rem;
+    font-family: 'Times New Roman', Times, serif;
+
+    /* color:rgb(216, 105, 41);  */
+    
+}  
+
+
+.content{
+    font-size: 2rem;
+    text-align: center;
+}
+
+.button-2{
+    border: 2px solid  rgb(194, 56, 37);  
+
+    }
+.content-1{
+    /* font-size: 2rem; */
+    margin-top: -20px;
+}
+
+
+.scalling_up_down_effect{
+    animation: scale-up-down 2s infinite ease-in-out;
+}
+@keyframes scale-up-down {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1); 
+        box-shadow: 5px 5px 10px rgb(194, 56, 37);
+    }
+    100% {
+        transform: scale(1);    
+    }
+}
+
+.second_portion .btn-border {
+    border: 1px solid #FC8500;
+    transition: 0.5s ease-in-out;
+}
+.second_portion .btn-border:hover{
+    color: white !important;
+    background-color:rgb(194, 56, 37);
+    
+}
+.second_portion .text-primary{
+    color: rgb(194, 56, 37)!important;
+}
+
+/* responsiveness for pics portions  */
+
+@media (max-width: 465px) {
+    .pics_portion{
+       display: none;
+    } 
+    .mission_vision_goal{
+        flex-direction: column;
+        /* flex: wrap; */
+    }
+    .paragraph-2{
+        font-size: 2rem;
+    }
+
+ 
+}
+
+@media (max-width:768px){
+    .headingh1{
+        font-size: 3rem;
+        color: rgb(194, 56, 37);
+        font-family: 'Times New Roman', Times, serif;
+    }  
+   
+}
+
+
+
+/* second section ends here */
+
+
+
+
+
+/* footer */
+
+
+footer{
+    background-color: #023047;
+    min-height: 400px;
+}
+.copywrite{
+    min-height: 50px;
+}
+
+/* footer */
